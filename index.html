@@ -10,7 +10,17 @@
     <title>Sneakers</title>
 </head>
 <body>
-    <header>
+    <nav id="menuBurguer" class="none">
+        <ul>
+            <img id="btnFechar" src="imgs/icon-close.svg" alt="">
+            <li>Coleções</li>
+            <li>Masculino</li>
+            <li>Feminino</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <header id="header">
         <div id="nav-bar">
             <div class="nav-part1">
                 <img id="burguer" src="imgs/icon-menu.svg" alt="">
@@ -22,8 +32,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="imagemPrincipal">
+    <main id="main">
+        <div id="imagemPrincipal">
             <img id="esquerda" src="imgs/icon-previous.svg" alt="">
             <img id="direita" src="imgs/icon-next.svg" alt="">
         </div>
@@ -45,6 +55,11 @@
         <div class="addCarrinho">
             <img src="imgs/icon-cart.svg" alt="">
             <p class="addCarrinhoTxt">Adicionar ao carrinho</p>
+        </div>
+        <div id="abaCarrinho">
+            <p id="tituloCarrinho">Seu Carrinho</p>
+            <hr>
+            <p>Seu Carrinho esta vazio</p>
         </div>
     </main>
     <script src="script.js"></script>

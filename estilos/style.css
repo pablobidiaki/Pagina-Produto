@@ -7,12 +7,30 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #nav-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin:10px 20px;
+}
+
+#menuBurguer{
+    background-color: white;
+}
+
+#menuBurguer ul img{
+    margin: 20px;
+}
+
+#menuBurguer li{
+    list-style-type: none;
+    text-align: center;
+    margin: 30px;
 }
 
 #burguer, #carrinho{
@@ -24,7 +42,7 @@
     height: 30px;
 }
 
-.imagemPrincipal{
+#imagemPrincipal{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -43,6 +61,7 @@
     height: 40px;
     border-radius: 50%;
     margin:0px 10px;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -125,4 +144,26 @@
 .addCarrinho .addCarrinhoTxt{
     color: white;
     margin-left: 20px;
+}
+
+#abaCarrinho{
+    background-color: white;
+    top: 60px;
+    position: fixed;
+    width: 96vw;
+    height: 35vh;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+
+#abaCarrinho #tituloCarrinho{
+    margin: 20px;
+}
+
+#abaCarrinho hr{
+    border-color:rgb(226, 226, 226);
+}
+
+.none{
+    display: none;
 }
