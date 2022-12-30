@@ -52,16 +52,29 @@
             <p id="resultado">0</p>
             <p id="mais">+</p>
         </div>
-        <div class="addCarrinho">
+        <div id="addCarrinho">
             <img src="imgs/icon-cart.svg" alt="">
             <p class="addCarrinhoTxt">Adicionar ao carrinho</p>
         </div>
-        <div id="abaCarrinho">
-            <p id="tituloCarrinho">Seu Carrinho</p>
-            <hr>
-            <p>Seu Carrinho esta vazio</p>
-        </div>
     </main>
+    <div id="abaCarrinho" class="none">
+        <p class="tituloCarrinho">Seu Carrinho</p>
+        <hr>
+        <p id="msgCarrinho">Seu Carrinho esta vazio</p>
+    </div>
+    <div id="abaCarrinhoCheio" class="none">
+        <p class="tituloCarrinho">Seu Carrinho</p>
+        <hr>
+        <div id="produtos">
+            <img class="fotoProduto" src="imgs/image-product-1-thumbnail.jpg" alt="">
+            <div class="ajuste">
+            <p id="nomeProd">Tênis edição limitada de outono</p>
+                <p id="valorFinal">Ouve Um Erro</p>
+            </div>
+            <img id="delete" class="lixeira" src="imgs/icon-delete.svg" alt="">
+        </div>
+        <button>Finalizar Compra</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

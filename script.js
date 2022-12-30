@@ -17,6 +17,16 @@ const main = document.getElementById('main')
 const header = document.getElementById('header')
 const botaoFechar = document.getElementById('btnFechar')
 
+const botaoCarrinho = document.getElementById('carrinho')
+const abaCar = document.getElementById('abaCarrinho')
+
+const botaoComprar = document.getElementById('addCarrinho')
+const carrinhoComProduto = document.getElementById('abaCarrinhoCheio')
+
+const lixeira = document.getElementById('delete')
+const valorFinal = document.getElementById('valorFinal')
+let totalCompra = 0
+
 mais.addEventListener('click', () =>{
     quantidade += 1
     quant.innerHTML = quantidade
@@ -78,3 +88,44 @@ botaoFechar.addEventListener('click', () =>{
     main.classList.remove('none')
     header.classList.remove('none')
 })
+
+botaoCarrinho.addEventListener('click', () =>{
+    abaCar.classList.remove('none')
+    document.documentElement.style.overflow = 'hidden';
+})
+
+main.addEventListener('click', () =>{
+    abaCar.classList.add('none')
+    document.documentElement.style.overflow = 'auto';
+})
+
+botaoComprar.addEventListener('click', () =>{
+    totalCompra = quantidade * 125
+    valorFinal.innerHTML = ("R$125,00 x " + quantidade + " = " + totalCompra + ",00")
+})
+
+botaoComprar.addEventListener('click', () =>{
+    if(quantidade > 0){
+        botaoCarrinho.addEventListener('click', () =>{
+            carrinhoComProduto.classList.remove('none')
+        })
+        
+        main.addEventListener('click', () =>{
+            carrinhoComProduto.classList.add('none')
+        })
+    }else{
+        botaoCarrinho.addEventListener('click', () =>{
+            abaCar.classList.remove('none')
+        })
+        
+        main.addEventListener('click', () =>{
+            abaCar.classList.add('none')
+        })
+    }
+})
+
+lixeira.addEventListener('click', () =>{
+    carrinhoComProduto.classList.add('none')
+    abaCar.classList.remove('none')
+})
+
