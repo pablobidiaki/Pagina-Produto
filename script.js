@@ -116,10 +116,12 @@ botaoComprar.addEventListener('click', () =>{
     }else{
         botaoCarrinho.addEventListener('click', () =>{
             abaCar.classList.remove('none')
+            carrinhoComProduto.classList.add('none')
         })
         
         main.addEventListener('click', () =>{
             abaCar.classList.add('none')
+            carrinhoComProduto.classList.add('none')
         })
     }
 })

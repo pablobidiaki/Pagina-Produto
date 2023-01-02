@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
 }
 
+hr{
+    display: none;
+}
+
 button{
     background-color: rgb(255, 125, 27);
     padding: 15px;
@@ -208,3 +212,8 @@ button{
 .none{
     display: none;
 }
+
+#nav-barPC,.imgsPC{
+    display: none;
+}
+

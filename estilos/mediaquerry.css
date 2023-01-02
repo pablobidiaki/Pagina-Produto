@@ -1,0 +1,80 @@
+@media  screen and (min-width:900px) {
+    hr{
+        margin: 10px 35px 20px 35px;
+        display: block;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+
+    #nav-barPC{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px 10px 40px;
+    }
+
+    #nav-barPC ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: -200px;
+    }
+
+    #nav-barPC ul li{
+        list-style-type: none;
+        margin:0px 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    #imagemPrincipal{
+        display: none;
+    }
+
+    .imgsPC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgsPC .imgCentral{
+        margin: 10px 40px;
+        width: 40vw;
+        height: 70vh;
+        border-radius: 10px;
+    }
+
+    .fotosPq{
+        margin: 0px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fotosPq img {
+        width: 7vw;
+        height: 17vh;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .miniCont2{
+        margin-right: 40px;
+    }
+
+    .precos1parte{
+        display: flex;
+    }
+
+    .precos1parte .desconto{
+        margin-left: 100px;
+    }
+
+    .precos{
+        display: block ;
+    }
+}
