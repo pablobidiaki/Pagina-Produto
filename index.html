@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/mediaquerry.css">
     <title>Sneakers</title>
 </head>
-<body>
+<body id="body">
     <nav id="menuBurguer" class="none">
         <ul>
             <img id="btnFechar" src="imgs/icon-close.svg" alt="">
@@ -41,8 +41,8 @@
                 <li>Sobre</li>
                 <li>Contato</li>
             </ul>
-            <img id="carrinho" src="imgs/icon-cart.svg" alt="">
-            <img id="avatar" src="imgs/image-avatar.png" alt="">
+            <img id="carrinho2" src="imgs/icon-cart.svg" alt="">
+            <img id="avatar2" src="imgs/image-avatar.png" alt="">
         </div>
         <hr>
     </header>
@@ -54,12 +54,12 @@
         <div class="container">
             <div class="miniCont1">
                 <div class="imgsPC">
-                    <img class="imgCentral" src="imgs/image-product-1.jpg" alt="">
+                    <img id="imgCentral" src="imgs/image-product-1.jpg" alt="">
                     <div class="fotosPq">
-                        <img src="imgs/image-product-1-thumbnail.jpg" alt="">
-                        <img src="imgs/image-product-2-thumbnail.jpg" alt="">
-                        <img src="imgs/image-product-3-thumbnail.jpg" alt="">
-                        <img src="imgs/image-product-4-thumbnail.jpg" alt="">
+                        <img id="img1" class="imgSelecionada" src="imgs/image-product-1-thumbnail.jpg" alt="">
+                        <img id="img2" src="imgs/image-product-2-thumbnail.jpg" alt="">
+                        <img id="img3" src="imgs/image-product-3-thumbnail.jpg" alt="">
+                        <img id="img4" src="imgs/image-product-4-thumbnail.jpg" alt="">
                     </div>
             </div>
             </div>
@@ -76,16 +76,18 @@
                     </div>
                     <p class="valorReal">R$250,00</p>
                 </div>
-                <div class="quantidade">
-                    <p id="menos">-</p>
-                    <p id="resultado">0</p>
-                    <p id="mais">+</p>
+                <div class="botoesFinais">
+                    <div class="quantidade">
+                        <p id="menos">-</p>
+                        <p id="resultado">0</p>
+                        <p id="mais">+</p>
+                    </div>
+                    <div id="addCarrinho">
+                        <img src="imgs/icon-cart.svg" alt="">
+                        <p class="addCarrinhoTxt">Adicionar ao carrinho</p>
+                    </div>
+                            </div>
                 </div>
-                <div id="addCarrinho">
-                    <img src="imgs/icon-cart.svg" alt="">
-                    <p class="addCarrinhoTxt">Adicionar ao carrinho</p>
-                </div>
-                        </div>
             </div>
     </main>
     <div id="abaCarrinho" class="none">
@@ -106,6 +108,16 @@
         </div>
         <button>Finalizar Compra</button>
     </div>
+        <div id="lightBox" class="none">
+            <p class="fechar"><img id="imgFechar-lightBox" src="imgs/icon-close.svg" alt=""></p>
+                <img id="imgPrincipal-lightBox" src="imgs/image-product-1.jpg" alt="">
+            <div class="opcoes-lightBox">
+                <img id="img1-lightBox"  class="imgSelecionada" src="imgs/image-product-1-thumbnail.jpg" alt="">
+                <img id="img2-lightBox" src="imgs/image-product-2-thumbnail.jpg" alt="">
+                <img id="img3-lightBox" src="imgs/image-product-3-thumbnail.jpg" alt="">
+                <img id="img4-lightBox" src="imgs/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

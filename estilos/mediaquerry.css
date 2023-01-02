@@ -4,26 +4,42 @@
         display: block;
     }
 
+    button{
+        width: 150px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
     #nav-bar{
         display: none;
+    }
+
+    #avatar2{
+        width: 30px;
+        height: 30px;
     }
 
     #nav-barPC{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 40px 10px 40px;
+        padding: 20px 100px 10px 100px;
+    }
+
+    #nav-barPC img{
+        cursor: pointer;
     }
 
     #nav-barPC ul{
         display: flex;
         flex-direction: row;
-        margin-left: -200px;
+        margin-left: -100px;
     }
 
     #nav-barPC ul li{
         list-style-type: none;
         margin:0px 20px;
+        cursor: pointer;
     }
 
     .container{
@@ -31,6 +47,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
+        margin: 10px 150px;
     }
 
     #imagemPrincipal{
@@ -42,11 +59,12 @@
         flex-direction: column;
     }
 
-    .imgsPC .imgCentral{
+    .imgsPC #imgCentral{
         margin: 10px 40px;
-        width: 40vw;
-        height: 70vh;
+        width: 30vw;
+        height: 60vh;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     .fotosPq{
@@ -60,6 +78,7 @@
         height: 17vh;
         border-radius: 10px;
         margin-bottom: 20px;
+        cursor: pointer;
     }
 
     .miniCont2{
@@ -77,4 +96,79 @@
     .precos{
         display: block ;
     }
+
+    .imgSelecionada{
+        opacity: .4;
+    }
+
+    .botoesFinais{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .descricao{
+        width: 31vw;
+    }
+
+    .quantidade{
+        width: 150px;
+    }
+
+    #addCarrinho{
+        cursor: pointer;
+    }
+
+    #abaCarrinho, #abaCarrinhoCheio{
+        width: 20vw;
+        left: 65%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+    }
+
+    #abaCarrinhoCheio{
+        height: auto;
+    }
+
+    #lightBox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #lightBox #imgPrincipal-lightBox{
+        width: 30vw;
+        height: 60vh;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .opcoes-lightBox{
+        width: 30vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .opcoes-lightBox img{
+        width: 7vw;
+        height: 17vh;
+        border-radius: 10px;
+    }
+
+    .fechar{
+        text-align: end;
+    }
+
+    #imgFechar-lightBox{
+        cursor: pointer;
+    }
+
+    .visible{
+        display: block;
+    }
+
+    .opcoes-lightBox img{
+        cursor: pointer;
+    }
+
+
 }
